@@ -1,3 +1,4 @@
 fun main() {
-    val personAuth = PersonAuth("google@google.by", "bestHash")
+    val personRegister = PersonRegister("Ilya","google@google.by", "bestHash")
+    val personAuth = PersonAuth(personRegister.name, personRegister.password)
 }
